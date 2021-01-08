@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import "./App.css";
 import TinderCards from "./TinderCards";
+import SwipeButtons from "./SwipeButtons";
 
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
 
       {/*TinderCards*/}
       <TinderCards/>
+
       {/*SwipeButtons*/}
+<SwipeButtons/>
 
     </div>
   );

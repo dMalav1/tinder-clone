@@ -34,9 +34,17 @@ console.log("Removing"+nameToDelete);
               className="swipe"
               key={person.name}
               preventSwipe={["up","down"]}
-              onSwipe={(dir)=swiped(dir,person.name)}
+              onSwipe={(dir)=>swiped(dir,person.name)}
               onCardLeftScreen={()=>outOfFrame(person.name)}
-            ></TinderCard>
+            >
+<div
+style={{backgroundImage:`url(${person.url})`}}
+className="card"
+>
+<h3>{person.name}</h3>
+
+</div>
+            </TinderCard>
           ))}
         </div>
       </div>
