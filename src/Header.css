@@ -11,3 +11,7 @@
     object-fit: contain;
     height: 40px;
 }
+
+.header__Icon{
+padding: 20px;
+}
